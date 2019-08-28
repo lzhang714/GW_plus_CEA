@@ -5,9 +5,9 @@
 #SBATCH --nodes=8
 #SBATCH --tasks-per-node=32
 #SBATCH --partition=debug
-#SBATCH -A mp261
+#SBATCH -A your_PI_account
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=longzhang2008@gmail.com
+#SBATCH --mail-user=your_email_address@gmail.com
 
 module load cray-hdf5
 
