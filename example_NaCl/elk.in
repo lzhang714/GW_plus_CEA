@@ -1,0 +1,130 @@
+tasks
+  0
+  802
+
+autormt
+  .true.
+
+exactrho
+  .true.
+
+mixtype   ! 2 means Pulay mixing
+  2
+
+!spinpol
+!  .true.
+
+!bfieldc
+!  0.0 0.0 0.01
+
+reducebf
+  0.5
+
+stype
+  0
+
+swidth
+  0.001
+
+avec
+  0.5000  0.5000   0.0000
+  0.5000  0.0000  -0.5000
+  0.0000  0.5000  -0.5000
+
+scale
+  10.6584335077d0
+
+atoms
+  2                                   : nspecies
+  'Cl.in'                             : spfname
+  1                                   : natoms
+  0.00 0.00 0.00  0.0 0.0 0.0         : atposl, bfcmt
+  'Na.in'                             : spfname
+  1                                   : natoms
+  0.50 0.50 0.50  0.0 0.0 0.0         : atposl, bfcmt
+
+ngridk
+  4  4  4
+
+nempty
+  200
+
+nebd_chi
+  200
+
+nebd_se
+  200
+
+vq0c
+  0.001d0 0.d0 0.d0
+
+G0W0
+  0
+  0.1
+  1 16
+
+lr_eta
+  0.05
+
+scgwni
+  1
+
+rho_val
+  .false.
+
+gw_restart
+  .false.
+
+upm
+  9 5
+
+niw
+  128
+
+bhbar
+  40.d0
+
+ac_sigma
+  1
+
+cpe_alp0
+  0.001d0
+
+cpe_sig0
+  0.d0
+
+cpe_gtor
+  1.d-5
+
+rgkmax
+  8.0
+
+gmaxvr
+  12.0
+
+lmaxapw
+  8
+
+lmaxvr
+  8
+
+gqmax
+  4.0
+
+nwrite
+  10
+
+caltype
+  0
+
+lr_nw
+  2
+
+plot1d
+  3 100                ! # of k-points to be sampled
+  0.000 0.500 0.000
+  0.000 0.000 0.000
+  0.000 0.500 0.500
+
+xctype
+  3 0 0
