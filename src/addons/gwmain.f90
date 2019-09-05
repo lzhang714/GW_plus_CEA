@@ -550,31 +550,6 @@ subroutine gwmain
     close(151)
   endif
   
-  
-!!  ! allocate array for band range
-!!  allocate(bndrg(2,nspinor))
-!!  !checking qpnb(1) and qpnb(2)
-!!  if ((qpnb(1).gt.qpnb(2)).or.(qpnb(1).le.0)) qpnb(1)=1           !! max range [1,nstsv]
-!!  if ((qpnb(2).le.0).or.(qpnb(2).gt.nstsv))   qpnb(2)=nstsv
-!!  nbnd=qpnb(2)-qpnb(1)+1
-!!  !band range
-!!  do isp1=1,nspinor
-!!    if (isp1.eq.1) then
-!!      bndrg(1,isp1)=qpnb(1)
-!!      bndrg(2,isp1)=qpnb(2)
-!!    elseif (isp1.eq.2) then   !spin-polarized
-!!      bndrg(1,isp1)=qpnb(1)+int(nstsv/2)
-!!      bndrg(2,isp1)=qpnb(2)+int(nstsv/2)
-!!    endif
-!!  enddo
-!!
-!!           vxcnk_allk(      nbnd,nspinor,nkptnr)          !! for cumu
-!!           exxnk_allk(      nbnd,nspinor,nkptnr)          !! for cumu
-!!  gw_self_energy_allk(nw_se,nbnd,nspinor,nkptnr)  
-!!
-!!  allocate(Eqp(nbnd,nspinor,nkptnr))
-!!  allocate(Zf(nbnd,nspinor,nkptnrloc))
-
 
   exxnk_allk=0.d0
   vxcnk_allk=0.d0
